@@ -6,13 +6,13 @@ const certs = [
     title: "NPTEL Certification",
     issuer: "NPTEL",
     date: "2024",
-    file: "/nptel.jpg",
+    file: "/nptel.jpeg",
   },
   {
     title: "Infosys Certification",
     issuer: "Infosys",
     date: "2024",
-    file: "/infosys.jpg",
+    file: "/infosys.jpeg",
   },
   {
     title: "Infosys Certificate (PDF)",
