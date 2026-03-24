@@ -16,7 +16,7 @@ const Index = () => {
       <AboutSection />
       <SkillsSection />
 
-      <Achievements /> {/* 👈 YOUR NEW SECTION */}
+      {/* ❌ Removed Achievements */}
 
       <ProjectsSection />
       <TrainingSection />
