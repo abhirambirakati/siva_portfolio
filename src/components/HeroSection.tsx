@@ -8,7 +8,7 @@ const HeroSection = () => {
       className="min-h-screen flex items-center section-padding pt-32"
     >
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
-        
+
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -96,12 +96,13 @@ const HeroSection = () => {
             <div className="absolute inset-0 rounded-full bg-accent/10 blur-3xl" />
 
             <img
-              src="/profile.jpeg"   {/* ✅ direct public path */}
+              src="/profile.jpeg"
               alt="Siva Kama Raju"
               className="relative w-full h-full rounded-full object-cover border-4 border-border"
             />
           </div>
         </motion.div>
+
       </div>
     </section>
   );
