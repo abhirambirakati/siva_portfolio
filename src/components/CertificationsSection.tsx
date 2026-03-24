@@ -20,6 +20,12 @@ const certs = [
     date: "2024",
     file: "/infosys.pdf",
   },
+  {
+    title: "Code-A-Haunt Hackathon",
+    issuer: "Coding Blocks, LPU",
+    date: "Feb 2024",
+    file: "/hackathon-certificate.jpeg", // 👈 ADDED
+  },
 ];
 
 const CertificationsSection = () => {
@@ -66,7 +72,6 @@ const CertificationsSection = () => {
                 </div>
               </div>
 
-              {/* ✅ View Button */}
               <a
                 href={c.file}
                 target="_blank"
