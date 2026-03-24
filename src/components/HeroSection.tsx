@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
-const profileImg = "/profile.jpeg";;
+const profileImg = "/profile.jpeg";
 
 const HeroSection = () => {
   return (
