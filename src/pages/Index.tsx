@@ -7,7 +7,6 @@ import TrainingSection from "@/components/TrainingSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
-import Achievements from "@/components/Achievements"; // 👈 ADD THIS
 
 const Index = () => {
   return (
