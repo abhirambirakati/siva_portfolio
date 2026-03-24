@@ -2,10 +2,24 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const certs = [
-  { title: "Python Training", issuer: "MindLuster", date: "Dec 2023" },
-  { title: "C++ Programming", issuer: "iamneo", date: "Dec 2024" },
-  { title: "Responsive Web Design", issuer: "freeCodeCamp", date: "Sep 2024" },
-  { title: "Web Design For Beginners", issuer: "MindLuster", date: "Feb 2024" },
+  {
+    title: "NPTEL Certification",
+    issuer: "NPTEL",
+    date: "2024",
+    file: "/nptel.jpg",
+  },
+  {
+    title: "Infosys Certification",
+    issuer: "Infosys",
+    date: "2024",
+    file: "/infosys.jpg",
+  },
+  {
+    title: "Infosys Certificate (PDF)",
+    issuer: "Infosys",
+    date: "2024",
+    file: "/infosys.pdf",
+  },
 ];
 
 const CertificationsSection = () => {
@@ -32,16 +46,35 @@ const CertificationsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-card rounded-xl border border-border p-6 flex gap-4 items-start"
+              className="bg-card rounded-xl border border-border p-6 flex flex-col gap-4"
             >
-              <div className="p-2.5 rounded-lg bg-accent/10 text-accent shrink-0">
-                <Award size={20} />
+              <div className="flex gap-4 items-start">
+                <div className="p-2.5 rounded-lg bg-accent/10 text-accent shrink-0">
+                  <Award size={20} />
+                </div>
+
+                <div>
+                  <h3 className="font-heading font-semibold text-foreground">
+                    {c.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {c.issuer}
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    {c.date}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground">{c.title}</h3>
-                <p className="text-sm text-muted-foreground">{c.issuer}</p>
-                <p className="text-xs text-muted-foreground mt-1">{c.date}</p>
-              </div>
+
+              {/* ✅ View Button */}
+              <a
+                href={c.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-center bg-accent text-white py-2 rounded-lg hover:opacity-90 transition"
+              >
+                View Certificate
+              </a>
             </motion.div>
           ))}
         </div>
